@@ -1,0 +1,44 @@
+.content {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    ". main ."
+    ". main ."
+    ". main .";
+    background-image:url(./taylor-kiser-6RJct18G_3I-unsplash.jpg);
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    grid-area: nav;
+    justify-content: center;
+}
+
+.button {
+    width: 2rem;
+    height: 300rem;
+    background-color:
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 500px;
+}
+
+.main-picture {
+    width: 40vw;
+    height: 80vh;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}

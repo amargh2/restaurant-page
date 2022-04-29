@@ -1,0 +1,13 @@
+        <div class="nav">
+            <button>Menu</button>
+            <button>About Us</button>
+            <button>Contact Us</button>
+        </div>
+        <div class="main">
+            <h1>Welcome to PB and Slay</h1>
+            <p>We're the best plant based restaurant in the city. No joke.</p>
+            <img style="height: 100vh; width: 40vw;" src="../src/edgar-castrejon-4Q_xlBOaCso-unsplash.jpg" alt="Picture of salad - Credit: Edgar Castrejon" srcset="">
+        </div>
+    </div>
+</body>
+</html>

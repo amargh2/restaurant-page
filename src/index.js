@@ -1,1 +1,5 @@
-console.log('test of webpack successful')
+import './style.css'
+import Soup from './soup.jpg'
+import Salad from './salad.jpg'
+import Fruit from './fruit.jpg'
+import Toast from './toast.jpg'
