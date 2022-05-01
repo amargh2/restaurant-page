@@ -1,56 +1,131 @@
+@font-face {
+
+    font-family: 'Orlega';
+  
+    src: url('./OrelegaOne-Regular.ttf') format('truetype');
+  
+    font-weight: 600;
+  
+    font-style: normal;
+  
+  }
+  
+  
+
 .content {
     display: grid;
     grid-template-areas: 
-    "header header header"
-    "nav nav nav"
+    ". header ."
+    ". nav ."
     ". main ."
     ". main ."
     ". main ."
     "footer footer footer";
     background-color:lightgreen;
+    background-image: url('./background-ren-ran.jpg');
+    background-size:contain;
+    background-size:cover;
+    grid-template-columns: 1fr 3fr 1fr;
+    position:relative;
+    min-height:100vh;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
     gap: 5px;
-
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    grid-area: nav;
-    justify-content: space-evenly;
-    padding: 50px;
-    background: lightgrey;
-}
-
-.button {
-    width: 10rem;
-    height: 6rem;
-    background-color: lightgreen;
     border-radius: 10px;
-    font-size: large;
-    font-weight: bold;
+    padding: 10px;
+    font-family: 'Orlega';
 }
 
-.main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 200px;
-}
-
-.main-picture {
-    width: 40vw;
-    height: 80vh;
+h1 {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    width: 30rem;
+    text-align: center;
 }
 
 .header {
     grid-area: header;
     display: flex;
     justify-content: center;
+    background-color: white;
+    background-color: rgb(0, 55, 55);
+    border-radius: 10px;
+    border-bottom: 5px solid lightgrey;
+    border-top: 5px solid lightgrey;
 }
+
+.nav {
+    display: flex;
+    grid-area: nav;
+    justify-content: center;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 1 1fr;
+    background-color: rgb(0, 55, 55);
+    padding: 20px;
+    gap: 20px;
+    border-bottom: solid lightgrey 5px;
+    border-top: solid lightgrey 5px;
+    border-radius: 10px;
+
+}
+
+.button {
+    width: 10rem;
+    height: 6rem;
+    background-color: lightgrey;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Orlega';
+}
+
+.button:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+p {
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding:200px;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(0, 55, 55);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    padding: 10px;
+    border-bottom: 5px solid lightgrey;
+    border-top: 5px solid lightgrey;
+    gap: 10px;
+    font-size: larger;
+}
+
+.picture-grid {
+    display:grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+
+}
+
+.main-picture {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
 
 .footer {
     grid-area: footer;
-    padding: 50px;
-    background-color: lightgrey;
+    background-color:rgb(0, 55, 55);
+    bottom:0;
+    color: white;
+    font-size:smaller;
+    border-radius: 10px;
+    border-top: lightgrey 5px solid;
+    border-bottom: lightgrey 5px solid;
 }

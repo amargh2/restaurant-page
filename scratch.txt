@@ -11,3 +11,6 @@
     </div>
 </body>
 </html>
+
+border-left: 3px solid lightgrey;
+border-right: 3px solid lightgrey;
