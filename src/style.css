@@ -24,6 +24,7 @@
     background-color:lightgreen;
     background-image: url('./background-ren-ran.jpg');
     background-size:contain;
+    background-repeat: no-repeat;
     background-size:cover;
     grid-template-columns: 1fr 3fr 1fr;
     position:relative;
@@ -53,6 +54,8 @@ h1 {
     border-radius: 10px;
     border-bottom: 5px solid lightgrey;
     border-top: 5px solid lightgrey;
+    align-items:center;
+    
 }
 
 .nav {
@@ -85,10 +88,10 @@ h1 {
     color: white;
 }
 
-p {
+.text {
     background-color: lightgrey;
     border-radius: 10px;
-    padding:200px;
+    padding:150px;
 }
 
 .main {
@@ -106,10 +109,12 @@ p {
 
 .picture-grid {
     display:grid;
+    flex-direction: column;
     gap: 5px;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
-
+    background-color: lightgrey;
+    border-radius: 5px;
 }
 
 .main-picture {
