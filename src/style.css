@@ -9,15 +9,223 @@
     font-style: normal;
   
   }
-  
-  
+ 
+/*contact page styles*/
+.contact-header {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    background-color: rgb(0, 55, 55);
+    border-radius: 10px;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    align-items:center;
+    color: white;
+}
 
+.contact {
+    display: grid;
+    grid-template-areas: 
+    ". header ."
+    ". nav ."
+    ". form ."
+    ". form ."
+    ". form ."
+    "footer footer footer";
+    background-color:lightgreen;
+    background-image: url('./background-ren-ran.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-template-columns: 1fr 3fr 1fr;
+    position:relative;
+    min-height:100vh;
+    grid-template-rows: .5fr .25fr 4fr 1fr;    
+    gap: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Orlega';
+    
+}
+
+.form {
+    grid-area: form;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    background-color: lightgrey;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    border-top: rgb(0, 55, 55) solid 2rem;
+    border-right: rgb(0, 55, 55) solid 2rem;
+    border-bottom: rgb(0, 55, 55) solid 2rem;
+    border-left: rgb(0, 55, 55) solid 2rem;
+}
+
+.name-field {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.name-field > input {
+    width: 19rem;
+    border-radius: 1rem;
+}
+
+.email-field {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-field > input{
+    width: 19rem; 
+    border-radius: 1rem;   
+}
+
+.message-field {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form > h2 {
+    text-align: center;
+}
+
+h3>p {
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+form {
+    font-size: larger;
+}
+
+.message-field > input {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.submit {
+    background-color:rgb(0, 55, 55);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content:center;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+
+  /*menu page styles*/
+
+.menu-header {
+    grid-area: menu;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    background-color: rgb(0, 55, 55);
+    border-radius: 10px;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    align-items:center;
+    color: white;
+}
+
+.menu {
+    display: grid;
+    grid-template-areas: 
+    ". header ."
+    ". nav ."
+    ". menu ."
+    ". menu ."
+    ". menu ."
+    "footer footer footer";
+    background-color:lightgreen;
+    background-image: url('./background-ren-ran.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-template-columns: 1fr 3fr 1fr;
+    position:relative;
+    min-height:100vh;
+    grid-template-rows: .5fr .25fr 4fr 1fr;    
+    gap: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Orlega';
+}
+
+.image-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.description-div{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    font-size: larger;
+    align-items:center;
+}
+
+.menu-div {
+    grid-area: menu;
+    grid-template-areas:
+    "picture picture title title"
+    "picture picture description description";
+    display:grid;
+    background-color:lightgrey;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    border-top:rgb(0, 55, 55) solid 2rem;
+    border-right: rgb(0, 55, 55) solid 2rem;
+    border-bottom: rgb(0, 55, 55) solid 2rem;
+    border-left: rgb(0, 55, 55) solid 2rem;
+    gap: 1rem;
+}
+
+.menu-img {
+    width: 10vw;
+    height: 20vh;
+    border:rgb(0, 55, 55) solid 5px;
+    border-radius: 5px;
+}
+
+.menu-item-div {
+    background-color: lightgrey;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+
+
+/*home page styles/static element styles*/
 .content {
     display: grid;
     grid-template-areas: 
     ". header ."
     ". nav ."
-    ". main ."
     ". main ."
     ". main ."
     "footer footer footer";
@@ -29,7 +237,7 @@
     grid-template-columns: 1fr 3fr 1fr;
     position:relative;
     min-height:100vh;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-rows: .5fr .25fr 4fr 1fr;
     gap: 5px;
     border-radius: 10px;
     padding: 10px;
@@ -75,7 +283,7 @@ h1 {
 
 .button {
     width: 10rem;
-    height: 6rem;
+    height: 4rem;
     background-color: lightgrey;
     border-radius: 10px;
     font-size: large;
@@ -109,12 +317,13 @@ h1 {
 
 .picture-grid {
     display:grid;
-    flex-direction: column;
     gap: 5px;
     grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
     padding: 10px;
     background-color: lightgrey;
     border-radius: 5px;
+
 }
 
 .main-picture {
