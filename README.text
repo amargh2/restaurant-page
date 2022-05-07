@@ -1,1 +1,12 @@
-Simple dynamically generated restaurant homepage using webpack, npm, custom fonts, and JS DOM manipulation.
+This vegan restaurant page/app is dynamically generated completely from JavaScript. It took a lot of code! I imagine it is in need of serious refactoring,
+but it was my first time working with classes in JavaScript, and man do they add a lot of functionality! This project gave me a much better understanding of 
+objects and classes, webpack and npm, and document manipulation in general. I tried to incorporate some modular design patterns and tried to remain 
+aware of separation of concerns.
+
+The CSS is completely written by hand, and it was a lot of fun figuring out how to get everything placed on the page correctly using
+grid, padding, and ensuring that everything appended to the page in the right way. While I really enjoy CSS and writing it by hand, in my next project
+I plan to use either TailWind or BootStrap to see how they work. One area I am weak on with CSS is making it responsive at different resolutions,
+and in future projects I hope to zero in on that more than I did in this project.
+
+It's a simple restaurant page, with an about page, menu page, and contact page which are loaded when the corresponding navigation button is clicked. The 
+page is dynamically rebuilt with each click.
